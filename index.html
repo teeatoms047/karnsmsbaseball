@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
     <SCRIPT LANGUAGE="JavaScript">
-      function testResults (form) {
-          var TestVar = form.inputbox.value;
+      function readText (form) {
+          TestVar =form.inputbox.value;
           alert ("You typed: " + TestVar);
+      }
+      function writeText (form) {
+          form.inputbox.value = "Have a nice day!"
       }
       </SCRIPT>
 </head>
@@ -29,7 +32,8 @@
 
       <form>
         Player Name -> <input type="text" name="pname"><br>
-        <input type="submit" value="Submit" onclick="testResults(this.form)">
+        <input type="submit" value="Submit" onclick="readText(this.form)">
+        <input type="submit" value="Write" onclick="WriteText(this.form)">
       </form>
 </body>
 </html>
