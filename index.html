@@ -4,20 +4,32 @@
     <meta charset="utf-8">
     <title>Karns MS Baseball</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+
+    <SCRIPT LANGUAGE="JavaScript">
+      function testResults (form) {
+          var TestVar = form.inputbox.value;
+          alert ("You typed: " + TestVar);
+      }
+      </SCRIPT>
 </head>
 <body>
     <h1 style="text-align: center;background-color: royalblue; color: white;">Karns Baseball</h1>
     <p style="text-align: center;">Middle School Varsity Team</p>
-    <form>
-        Player name: <input type="text" name="fname"><br>
+   <!--> <form>
+        Player name: <input type="text" name="pname"><br>
         <input type="submit" value="Submit">
-      </form>
+      </form> 
       <nav>
         <ul>
           <li><a href="javascript:location.reload();">Home</a></li>
           <li><a href="playerinfo.html">Player Info</a></li>
           
         </ul>
-      </nav>
+      </nav> -->
+
+      <form>
+        Player Name -> <input type="text" name="pname"><br>
+        <input type="submit" value="Submit" onclick="testResults(this.form)">
+      </form>
 </body>
 </html>
